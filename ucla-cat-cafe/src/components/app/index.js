@@ -12,7 +12,6 @@ const App = () => (
   // id 'top' set so anchor in the footer links user to top of page
   <div id="top">
     <nav>
-      <img src="https://s3-us-west-1.amazonaws.com/coffeegodddpublic/ucla-cat-cafe/Screen+Shot+2019-05-07+at+1.38.43+PM.png" alt="UCLA logo"></img>
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#current-cats">Current Cats</a>

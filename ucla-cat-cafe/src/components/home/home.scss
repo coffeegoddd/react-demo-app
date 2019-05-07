@@ -1,0 +1,26 @@
+#home {
+    img {
+        width: 100%;
+        @include borderRadius(10px);
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            position: absolute;
+            font-size: 7vw !important;
+            color: rgb(112, 46, 150);
+            font-family: 'Pacifico', cursive;
+            white-space: nowrap;
+        }
+    }
+
+}
+
+@media (max-width: 414px) {
+    #home {
+        padding: 0;
+    }
+}

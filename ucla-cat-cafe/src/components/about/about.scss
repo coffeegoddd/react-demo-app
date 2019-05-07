@@ -1,0 +1,13 @@
+#about {
+    place-items: center center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+
+    p {
+        font-size: 1.6vw;
+        @media screen and (max-width: $break-medium) {
+            font-size: 2.5vw;
+        }
+    }
+}

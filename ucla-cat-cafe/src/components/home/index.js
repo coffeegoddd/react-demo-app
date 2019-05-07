@@ -8,7 +8,7 @@ const Home = () => (
     // id set to home so the link in the nav bar directs user here
     <section id="home">
         <header>
-            <h1>UCLA Cat Cafe!</h1>
+            <h1>Curious Cat Cafe!</h1>
         </header>
         <img src="https://s3-us-west-1.amazonaws.com/coffeegodddpublic/ucla-cat-cafe/main.jpg" alt="cat with coffee"></img>
     </section>

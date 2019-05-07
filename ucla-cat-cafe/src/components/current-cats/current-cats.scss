@@ -1,0 +1,60 @@
+#current-cats {
+    align-items: center;
+
+    @media screen and (max-width: $break-small) {
+        background-color: white !important;
+    }
+
+    #card-container {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        width: 50%;
+
+        @media screen and (max-width: $break-large) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: $break-medium) {
+            width: 90%;
+        }
+
+        .cat-card-container {
+            display: flex;
+            flex-direction: column;
+            place-items: center center;
+            background-color: blueviolet;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                @include borderRadius(10px);
+            }
+
+            p {
+                margin-left: 5%;
+                margin-right: 5%;
+                font-size: 1.6vw;
+        
+                @media screen and (max-width: $break-medium) {
+                    font-size: 2.5vw;
+                }
+            }
+
+            h3 {
+                color: whitesmoke;
+                font-family: 'Pacifico', cursive;
+                font-size: 2.5vw;
+                padding: 0;
+                margin: 0;
+                margin-top: 1rem;
+                
+                @media screen and (max-width: $break-medium) {
+                    font-size: 4.2vw;
+                }
+            }
+        }
+    }
+}

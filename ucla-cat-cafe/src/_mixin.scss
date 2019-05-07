@@ -1,0 +1,6 @@
+@mixin borderRadius($pixels) {
+    border-radius: $pixels;
+    -moz-border-radius: $pixels;
+    -webkit-border-radius: $pixels;
+    -khtml-border-radius: $pixels;
+}

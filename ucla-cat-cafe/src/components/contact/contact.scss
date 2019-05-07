@@ -1,0 +1,31 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(33, 33, 97);
+    color: whitesmoke;
+    background-color: blueviolet;
+    padding-bottom: 5%;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 50%;
+        font-size: 1.6vw;
+        font-family: 'Pacifico', cursive;
+        
+        @media screen and (max-width: $break-medium) {
+            font-size: 2.5vw;
+        }
+
+        .contact-button {
+            width: 50px;
+        }
+
+        textarea {
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    }
+}

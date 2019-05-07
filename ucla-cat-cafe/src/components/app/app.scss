@@ -1,6 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto');
+@import '../../mixin';
+
+// define breakpoints before importing scss modules
+$break-small: 414px;
+$break-medium: 768px;
+$break-large: 1024px;
+
+
+@import '../home/home';
+@import '../about/about';
+@import '../current-cats/current-cats';
+@import '../contact/contact';
+
+
+
 #top {
-    nav img {
-        width: 10%;
-        height: auto;
+    font-family: 'Roboto', sans-serif;
+
+    nav, footer {
+        display: flex;
+        font-size: 2vw;
+        font-family: 'Pacifico', cursive;
+
+        @media screen and (max-width: $break-medium) {
+            font-size: 4vw;
+        }
+    }
+    
+    nav {
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    
+        a {
+            text-decoration: none;
+            color: rgb(228, 196, 133);
+        }
+    }
+
+    main {
+        section {
+            @include borderRadius(10px);
+            margin-bottom: 5%;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(228, 196, 133);
+            margin-left: 5%;
+            margin-right: 5%;
+            color: rgb(65, 39, 39);
+        
+            h1 {
+                font-family: 'Pacifico', cursive;
+                font-size: 3vw;
+                margin: 1rem;
+                white-space: nowrap;
+                
+                @media screen and (max-width: $break-medium) {
+                    font-size: 5vw;
+                }
+            }
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        color: rgb(65, 39, 39);
+
+        a {
+            color: rgb(65, 39, 39);
+        }
     }
 }
